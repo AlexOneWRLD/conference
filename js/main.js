@@ -2244,12 +2244,14 @@ __webpack_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sliders_news_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders/_news-slider.js */ "./src/js/project/sliders/_news-slider.js");
 /* harmony import */ var _sliders_one_news_page_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sliders/_one-news-page-slider.js */ "./src/js/project/sliders/_one-news-page-slider.js");
-/* harmony import */ var _map_inter_map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./map/_inter-map.js */ "./src/js/project/map/_inter-map.js");
-/* harmony import */ var _scroll_to_block_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_scroll-to-block.js */ "./src/js/project/_scroll-to-block.js");
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_stream.js */ "./src/js/project/_stream.js");
-/* harmony import */ var _hero_animation_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_hero-animation.js */ "./src/js/project/_hero-animation.js");
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_map_inter_map_js__WEBPACK_IMPORTED_MODULE_2__]);
-_map_inter_map_js__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _sliders_team_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sliders/_team-slider.js */ "./src/js/project/sliders/_team-slider.js");
+/* harmony import */ var _map_inter_map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./map/_inter-map.js */ "./src/js/project/map/_inter-map.js");
+/* harmony import */ var _scroll_to_block_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_scroll-to-block.js */ "./src/js/project/_scroll-to-block.js");
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_stream.js */ "./src/js/project/_stream.js");
+/* harmony import */ var _hero_animation_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_hero-animation.js */ "./src/js/project/_hero-animation.js");
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_map_inter_map_js__WEBPACK_IMPORTED_MODULE_3__]);
+_map_inter_map_js__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -2413,15 +2415,46 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation]);
 if (document.querySelector('.news-page__swiper')) {
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.news-page__swiper', {
-    loop: true,
     speed: 800,
     slidesPerGroup: 1,
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-controls__button--next",
+      prevEl: ".swiper-controls__button--prev",
+      disabledClass: "swiper-controls__button--disable"
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/project/sliders/_team-slider.js":
+/*!************************************************!*\
+  !*** ./src/js/project/sliders/_team-slider.js ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
+/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
+
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation]);
+if (document.querySelector('.team__swiper')) {
+  var allBlocks = document.querySelectorAll('.team__list');
+  allBlocks.forEach(function (block) {
+    new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](block.querySelector('.team__swiper'), {
+      speed: 800,
+      slidesPerGroup: 1,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: block.querySelector(".swiper-controls__button--next"),
+        prevEl: block.querySelector(".swiper-controls__button--prev")
+      }
+    });
   });
 }
 
