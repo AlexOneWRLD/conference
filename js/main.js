@@ -2477,12 +2477,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var burger = function burger() {
   var burgerButton = document.querySelector('[data-burger-button]');
-  var menu = document.querySelector('[data-menu]');
   var menuLinks = document.querySelectorAll('[data-menu-link]');
   var overlay = document.querySelector('[data-menu-overlay]');
   var buttonsContainer = document.querySelector(".header__account");
   var partner = document.querySelector(".header__partners");
   var header = document.querySelector(".header");
+  var menu = header.querySelector('[data-menu]');
   var keyDownHandler = function keyDownHandler(event) {
     if (event.code === 'Escape') {
       hideBurger();
@@ -2503,7 +2503,7 @@ var burger = function burger() {
   };
   var hideBurger = function hideBurger() {
     burgerButton.classList.remove('burger-button--active');
-    menu.classList.remove('burger-menu--active');
+    menu.classList.remove('menu--active');
     overlay.classList.remove('overlay--active');
     partner.classList.remove('header__partners--hidden');
     buttonsContainer.classList.remove('header__account--active');
@@ -2512,7 +2512,7 @@ var burger = function burger() {
   };
   burgerButton.addEventListener('click', function () {
     burgerButton.classList.toggle('burger-button--active');
-    menu.classList.toggle('burger-menu--active');
+    menu.classList.toggle('menu--active');
     overlay.classList.toggle('overlay--active');
     partner.classList.toggle('header__partners--hidden');
     buttonsContainer.classList.toggle('header__account--active');
@@ -2526,10 +2526,12 @@ var burger = function burger() {
   });
   menuLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
       hideBurger();
       checkClass();
-      (0,_project_scroll_to_block_js__WEBPACK_IMPORTED_MODULE_1__.scrollToBlock)(link);
+      if (link.hasAttribute('data-scroll-home-page')) {
+        e.preventDefault();
+        (0,_project_scroll_to_block_js__WEBPACK_IMPORTED_MODULE_1__.scrollToBlock)(link);
+      }
     });
   });
 };
@@ -2553,10 +2555,10 @@ var stickyHeader = function stickyHeader() {
   var header = document.querySelector('.header');
   var hero = document.querySelector('.hero');
   var heroHeight = hero ? hero.offsetHeight : 500;
-  var burgerMenu = document.querySelector('.burger-menu');
+  var burgerMenu = header.querySelector('.menu');
   if (header) {
     var changeClasses = function changeClasses() {
-      if (!burgerMenu.classList.contains('burger-menu--active')) {
+      if (!burgerMenu.classList.contains('menu--active')) {
         var scrollDistance = window.scrollY;
         if (scrollDistance > heroHeight) {
           header.classList.add('header--fixed');

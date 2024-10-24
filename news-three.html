@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- base meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Научно-практическая конференция | Страница с новостью</title>
+    <meta name="description" content="I Всероссийская научно-практическая конференция для студентов и молодых ученых "Актуальные вопросы экологического просвещения"">
+    
+    <meta name="keywords" content="научно-практическая конференция по экологии, экология для студентов, молодые ученые в экологии, преподаватели экологии, исследования в области экологии, экологические проблемы, экология и устойчивое развитие, молодежь и экология">
+    
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Научно-практическая конференция | Страница с новостью">
+    <meta property="og:description" content="I Всероссийская научно-практическая конференция для студентов и молодых ученых "Актуальные вопросы экологического просвещения"">
+    <meta property="og:image" content="img/previews/home-preview.jpg"> <!-- min: 600 * 315, perfect: 1200 * 630 -->
+    <!-- <meta property="og:url" content="URL вашей страницы"> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Научно-практическая конференция | Страница с новостью">
+    <meta name="twitter:description" content="I Всероссийская научно-практическая конференция для студентов и молодых ученых "Актуальные вопросы экологического просвещения"">
+    <meta name="twitter:image" content="img/previews/home-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- stlyes, js -->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+
+<header class="header">
+    <div class="overlay" data-menu-overlay aria-hidden></div>
+    <nav class="header__nav">
+        <div class="container header__container">
+            <a class="header__logo logo" href="./">
+                <picture>
+                    <source srcset="img/logos/conference-logo.avif" type="image/avif">
+                    <source srcset="img/logos/conference-logo.webp" type="image/webp">
+                    <img class="logo__img" src="img/logos/conference-logo.png" alt="Первая Научно-Практическая Конференция По Экологии" width="332" height="55">
+                </picture>
+            </a>
+
+            <ul class="header__partners">
+                <li class="header__partner">
+                    <a class="header__link" href="https://edu.gov.ru" target="_blank">
+                        <img class="header__logo" src="img/logos/mp-logo.svg" alt="Министерство Просвещения Российской Федерации" width="150" height="55">
+                    </a>
+                </li>
+                <li class="header__partner">
+                    <a class="header__link" href="https://mpcenter.ru" target="_blank">
+                        <img class="header__logo" src="img/logos/cpi-logo.svg" alt="Центр Просветительских Инициатив" width="150" height="34">
+                    </a>
+                </li>
+                <li class="header__partner">
+                    <a class="header__link" href="https://reo.ru" target="_blank">
+                        <img class="header__logo" src="img/logos/eco-logo.svg" alt="Российский Экологический Оператор" width="135" height="32">
+                    </a>
+                </li>
+                <li class="header__partner">
+                    <a class="header__link" href="https://minobrnauki.gov.ru" target="_blank">
+                        <img class="header__logo" src="img/logos/mnvo-logo.svg" alt="Министерство науки и высшего образования Российской Федерации" width="168" height="48">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header__account">
+                <a class="header__registration button" href="#registration-block" data-scroll-home-page data-menu-link>
+                    Войти
+                </a>
+                <a class="header__registration button" href="#registration-block" data-scroll-home-page data-menu-link>
+                    Зарегистрироваться
+                </a>
+            </div>
+
+            <button class="burger-button" aria-label="Открыть меню" aria-expanded="false" aria-controls="burger-menu" data-burger-button>
+                <span class="burger-button__line" aria-hidden></span>
+            </button>
+            <div class="menu header-menu" id="burger-menu" data-menu>
+    <div class="container">
+        <ul class="menu__items">
+            <li class="menu__item">
+                <span class="menu__title">
+                    Главная
+                </span>
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link" href="#hero" data-scroll-home-page data-menu-link>
+                            о событии
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#advantages" data-scroll-home-page data-menu-link>
+                            описание
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="./statistics.html" data-menu-link>
+                            статистика
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="./archive.html" data-menu-link>
+                            архив
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#news-block" data-scroll-home-page data-menu-link>
+                            новости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <span class="menu__title">
+                    Участникам
+                </span>
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link" href="#form-part" data-scroll-home-page data-menu-link>
+                            форма участия
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#registration-block" data-scroll-home-page data-menu-link>
+                            регистрация
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#programm" data-scroll-home-page data-menu-link>
+                            программа
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#stream" data-scroll-home-page data-menu-link>
+                            трансляция
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#sections" data-scroll-home-page data-menu-link>
+                            секции
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#feedbacks" data-scroll-home-page data-menu-link>
+                            отзывы участников
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <span class="menu__title">
+                    Материалы
+                </span>
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link" href="#materials-requirement" data-scroll-home-page data-menu-link>
+                            требования
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="./layouts.html" data-menu-link target="_blank">
+                            макеты
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="./collection.html" data-menu-link>
+                            сборник
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#materials-state" data-scroll-home-page data-menu-link>
+                            положение
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#materials-agreement" data-scroll-home-page data-menu-link>
+                            согласие на публикацию
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <span class="menu__title">
+                    Команда
+                </span>
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link" href="#team-orgkom" data-scroll-home-page data-menu-link>
+                            оргкомитет
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#team-guests" data-scroll-home-page data-menu-link>
+                            приглашенные гости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+    </nav>
+</header>
+
+
+<section class="news-page inner-page">
+    <div class="container">
+        <div class="news-page__wrapper">
+            <h1 class="news-page__title">
+                Определены направления тем для обсуждения на научно-практической конференции «Актуальные вопросы экологического просвещения»
+            </h1>
+            <time class="news-page__date" datetime="16.10.2024">
+                28.10.2024
+            </time>
+            <a href="./#news-block" class="news-page__button button button--light">Назад</a>
+        </div>
+        <div class="news-page__swiper swiper">
+            <ul class="news-page__sliders swiper-wrapper">
+                   
+                    <li class="news-page__slider swiper-slide">
+                      <picture>
+                        <source srcset="img/news-page/news1/3.avif" type="image/avif">
+                        <source srcset="img/news-page/news1/3.webp" type="image/webp">
+                        <img class="news-page__img" src="img/news-page/news1/3.jpg" alt="Определены направления тем для обсуждения на научно-практической конференции" width="1208" height="644" loading="lazy">
+                    </picture>
+                  </li>
+            </ul>
+            <div class="swiper-controls">
+                <div class="swiper-controls__button swiper-controls__button--prev"></div>
+                <div class="swiper-controls__button swiper-controls__button--next"></div>
+            </div>
+        </div>
+        <div class="news-page__text">
+             <p> На предстоящей всероссийской научно-практической конференции «Актуальные вопросы экологического просвещения» планируется обсудить широкий спектр актуальных экологических проблем. </p>  <p> Центральными темами станут достижения и перспективы национального проекта «Экология», стратегическое развитие экологического сектора, а также вопросы сохранения лесов и биологического разнообразия. Особое внимание будет уделено проблемам загрязнения окружающей среды, включая сточные воды и выбросы в атмосферу, экономике замкнутого цикла, городской среде и экологии жилища. </p>  <p> На конференции особое внимание будет уделено роли семейного воспитания в формировании экологической культуры, экологическому просвещению, современной повестке прикладной экологии и здоровью человека в контексте окружающей среды. Участники также обсудят государственную политику в области экологии и ее практическую реализацию, а также экологическую архитектуру и принципы бережного строительства. </p>  <p> Тема преподавания экологии в образовательной системе также станет важной частью конференции, способствуя обмену опытом и новыми идеями среди участников. </p> 
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom">
+      <div class="footer__contacts">
+        <a class="footer__item" href="politika-obrabotki-pdn.pdf" target="_blank">
+          Политика конфиденциальности
+        </a>
+        <div class="footer__item">
+          Обратная связь
+          <a href="mailto:conference@mpcenter.ru">
+            conference@mpcenter.ru
+          </a>
+        </div>
+      </div>
+      <div class="menu footer__menu">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <span class="menu__title">
+              Главная
+            </span>
+            <ul class="menu__list  menu__list--footer">
+              <li>
+                <a class="menu__link" href="#hero" data-scroll-home-page>
+                  О событии
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#advantages" data-scroll-home-page>
+                  Описание
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="./statistics.html">
+                  Статистика
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="./archive.html">
+                  Архив
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#news-block" data-scroll-home-page>
+                  Новости
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <span class="menu__title">
+              Участникам
+            </span>
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="#form-part" data-scroll-home-page>
+                  Форма участия
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#registration-block" data-scroll-home-page>
+                  Регистрация
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#programm" data-scroll-home-page>
+                  Программа
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#stream" data-scroll-home-page>
+                  Трансляция
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#sections" data-scroll-home-page>
+                  Секции
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#feedbacks" data-scroll-home-page>
+                  Отзывы участников
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <span class="menu__title">
+              Материалы
+            </span>
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="#materials-requirement" data-scroll-home-page>
+                  Требования
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="./layouts.html" target="_blank">
+                  Макеты
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="./collection.html">
+                  Сборник
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#materials-state" data-scroll-home-page>
+                  Положение
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#materials-agreement" data-scroll-home-page>
+                  Согласие на публикацию
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <span class="menu__title">
+              Команда
+            </span>
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="#team-orgkom" data-scroll-home-page>
+                  Оргкомитет
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="#team-guests" data-scroll-home-page>
+                  Приглашенные гости
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+
+</html>
